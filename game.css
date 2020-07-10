@@ -16,6 +16,10 @@ body {
     grid-template-columns: repeat(21, 1fr);
 }
 
+#scoreBoard {
+    color: orange; 
+    font-size: 36px;
+}
 
 .snake {
     background-color: hsl(125, 95%, 25%); 

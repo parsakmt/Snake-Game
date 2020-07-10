@@ -6,6 +6,7 @@ import { borderCollision, GRID_SIDE_LENGTH } from "./grid.js";
 
 /*VARIABLE DECLARATIONS*/
 let lastRenderTime = 0;
+let score = 0; 
 const gameBoard = document.getElementById('gameBoard'); 
 let gameLost = false; 
 let gameWon = false; 
@@ -63,6 +64,9 @@ function main (currentTime) {
 
     update()
     draw()
+
+    //Score board update
+    document.getElementById("scoreBoard").innerHTML = "Score: " + getScore().toString();
 }
 
 window.requestAnimationFrame(main); //Begins program
@@ -97,4 +101,9 @@ function isGameWon () {
         return true;
     }
     return false; 
+}
+
+function getScore () {
+    score = snakeBody.length - 1;
+    return score; 
 }
