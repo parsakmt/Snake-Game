@@ -15,13 +15,17 @@ let gameWon = false;
 /*FUNCTIONS*/
 
 function main (currentTime) {
-
     /*Determine if Game is Over*/ 
 
     //Lose 
     gameLost = isGameLost(); 
     if (gameLost){ 
         if (confirm('Game Over! Press ok to restart!')) {
+            //Moving snake body prevents reload from 
+            //getting stuck
+            snakeBody[0].x = 11; 
+            snakeBody[0].y = 11; 
+
             window.location.reload(); 
         }
         else 
@@ -62,7 +66,6 @@ function main (currentTime) {
 }
 
 window.requestAnimationFrame(main); //Begins program
-
 
 
 function update() {

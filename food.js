@@ -5,7 +5,6 @@ import {getRandomGridPosition} from "./grid.js";
 /*VARIABLE DECLARATIONS*/
 export let food = {x: getRandomGridPosition(), y: getRandomGridPosition()}; 
 
-
 /*FUNCTIONS*/
 
 export function update() {
@@ -22,8 +21,9 @@ export function draw(gameBoard) {
 }
 
 function eatFood() {
-    if (food.x == snakeBody[0].x && food.y == snakeBody[0].y)
+    if (food.x == snakeBody[0].x && food.y == snakeBody[0].y) {
         addNewSegmenets(); 
+    }
 }
 
 function newFoodPosition () {

@@ -1,8 +1,6 @@
 /*VARIABLE DECLARATIONS*/
 export const GRID_SIDE_LENGTH = 21;  //Square grid, ROWS == COLUMNS
 
-
-
 /*FUNCTIONS*/ 
 
 export function getRandomGridPosition () {
