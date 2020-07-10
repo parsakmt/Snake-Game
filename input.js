@@ -1,8 +1,11 @@
+/*IMPORTS*/
 import { snakeBody } from "./snake.js";
 
+/*VARIABLE DECLARATIONS*/
 export let direction = {x: 0, y: 0}; 
 
 
+/*FUNCTIONS*/ 
 document.addEventListener('keydown', function(event){
 
     /* Snake is unable to move in reverse if it has multiple segments */

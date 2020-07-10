@@ -1,32 +1,25 @@
-//IMPORTS
+/*IMPORTS*/
 import { snakeBody, addNewSegmenets } from "./snake.js";
 import {getRandomGridPosition} from "./grid.js"; 
 
-//VARIABLE DECLARATIONS
+/*VARIABLE DECLARATIONS*/
 export let food = {x: getRandomGridPosition(), y: getRandomGridPosition()}; 
 
 
-//UPDATE FOOD FUNCTION
+/*FUNCTIONS*/
+
 export function update() {
     eatFood(); 
     newFoodPosition(); 
 }
 
-//DRAWING FOOD FUNCTION
 export function draw(gameBoard) {
-
         const foodElement = document.createElement('div');
         foodElement.style.gridRowStart = food.y; 
         foodElement.style.gridColumnStart = food.x; 
         foodElement.classList.add('food'); 
         gameBoard.appendChild(foodElement); 
 }
-
-
-
-
-
-//HELPER FUNCTIONS
 
 function eatFood() {
     if (food.x == snakeBody[0].x && food.y == snakeBody[0].y)

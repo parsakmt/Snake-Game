@@ -12,9 +12,12 @@ let gameWon = false;
 
 
 
-/*MAIN GAME FUNCTION*/
+/*FUNCTIONS*/
+
 function main (currentTime) {
+
     /*Determine if Game is Over*/ 
+
     //Lose 
     gameLost = isGameLost(); 
     if (gameLost){ 
@@ -58,7 +61,7 @@ function main (currentTime) {
     draw()
 }
 
-window.requestAnimationFrame(main);
+window.requestAnimationFrame(main); //Begins program
 
 
 
@@ -76,7 +79,6 @@ function draw() {
     drawFood(gameBoard);
     drawSnake(gameBoard); 
 }
-
 
 function isGameLost () {
     //Two conditions for losing:

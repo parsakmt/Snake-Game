@@ -1,7 +1,10 @@
-//VARIABLE DECLARATIONS
+/*VARIABLE DECLARATIONS*/
 export const GRID_SIDE_LENGTH = 21;  //Square grid, ROWS == COLUMNS
 
-//HELPER FUNCTIONS
+
+
+/*FUNCTIONS*/ 
+
 export function getRandomGridPosition () {
     return 1 + Math.floor (1 + Math.random() * GRID_SIDE_LENGTH - 1); 
 }
