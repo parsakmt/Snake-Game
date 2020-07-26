@@ -31,3 +31,31 @@ body {
     background-color: hsl(0, 100%, 50%); 
     border: .25vmin solid black; 
 }
+
+
+#homeButtons {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    padding: 20px 44px;
+
+}
+
+.button {
+    background-color: lightgreen;
+    color: black;
+    font-size: 32px;
+    font-family: 'fantasy', 'monospace', 'Franklin Gothic Medium';
+    border: none; 
+    text-decoration: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.buttonPlay {
+    padding: 20px 39px;
+}
+
+.buttonSettings {
+    padding: 20px 59.5px;
+}
