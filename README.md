@@ -1,6 +1,8 @@
 # Snake Game
 Play Snake, a clasic game where you are your own obstacle!
 
+https://parsakmt.github.io/Snake-Game/
+
 # Controls
 Click the left, right, up, and down arrow keys to move the snake in the specified key direction.
 
