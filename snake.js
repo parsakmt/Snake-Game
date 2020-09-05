@@ -4,7 +4,7 @@ import { direction } from "./input.js";
 
 /*VARIABLE DECLARATIONS*/
 export let SNAKE_SPEED = 12; 
-export let SEGMENTS_PER_FOOD = 1; 
+export let SEGMENTS_PER_FOOD = localStorage.getItem("lengthPerFood") == null ? 1 : localStorage.getItem("lengthPerFood"); 
 export let snakeBody = [{ x: 11, y: 11 }]; 
 export let newTailSegment = { x: snakeBody[0].x, y: snakeBody[0].y }
 

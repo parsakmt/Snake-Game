@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Snake</title>
+    <title>Settings</title>
 
     <link  rel = "stylesheet" type = "text/css" href = "game.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src= "game.js" defer type = "module"></script>
+    <script src= "settings.js"></script>
 
 </head>
 <body>
@@ -20,10 +20,13 @@
         </a>
     </div>
 
-    <div id = "gameBoard">
-        
-    </div>
+    <div id = "sliderContainer">
+        <h1 id = "sliderHeading">Snake Length Per Food</h1> 
 
-    <h2 id = "scoreBoard"></h2>
+        <input type = "range" min = "1" max = "5" value = "1" id = "lengthSlider"/> <br/>
+
+        <p id = "sliderValDescription">Length Per Food: <span id = "lengthVal"></span></p>
+    </div>
+    
 </body>
 </html>

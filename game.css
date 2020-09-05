@@ -59,3 +59,34 @@ body {
 .buttonSettings {
     padding: 20px 59.5px;
 }
+
+#sliderHeading {
+    color: white; 
+    font-size: 50px; 
+}
+
+#sliderValDescription, #lengthVal {
+    color: white; 
+    font-size: 30px; 
+}
+
+#lengthSlider {
+  color: white; 
+  width: 500px;
+  height: 25px;
+  position: absolute; 
+    left: 0px; 
+    right: 0px;
+    margin: auto; 
+}
+
+#navigationIcons {
+    color: white; 
+    font-size: 40px; 
+    position: absolute; 
+    left: 10px; 
+    right: 0px;
+    top: 10px; 
+    bottom: 0px;  
+    margin: auto; 
+}
